@@ -95,7 +95,7 @@ class VideoPlayerShortcode
             $width = intval( arrayPath( $meta, 'width', (int) 0 ) );
             $height = intval( arrayPath( $meta, 'height', (int) 0 ) );
             if ( !empty($width) && !empty($height) ) {
-                $extras .= " width={$asset->width} height={$asset->height}";
+                $extras .= " width={$width} height={$height}";
             }
         } else {
             $extras .= " width={$asset->width} height={$asset->height}";
